@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Positioning Elements</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+div#container {
+  background-color: #00FFFF;
+  height: 500px;
+  width:  500px;
+  margin-bottom: 20px;
+
+  /*relative positoning works by moving the element from its original base point - with this the item is not removed from the documnt flow and all elements outside of it do not see it as being moved
+  Positioning works by offsetting from original - offset top by 40px, offset left side by 40px*/
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+p {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+#div1 {
+  background-color: #A52A2A;
+  height: 300px;
+  width:  150px;
+}
+
+#child {
+  background-color: #336699;
+  /* With absolute sizing the element is positoned relative to the last non-static parent element. This is a child to div1 but it is positoned relative to containiner element.
+  Positon is found by offset with edges of parent element */
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  overflow: auto;
+  width: 150px;
+  height: 150px;
+}
+#p2 {
+  background-color: #DEB887;
+
+}
+#p3 {
+  background-color: #5F9EA0;
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+</style>
+</head>
+<body>
+<h1>Positioning Elements</h1>
+
+<div id="container">
+  Container: this div has been moved with relative positioning. It has not been removed from doc flow and so paragraph below this has moeved
+  <br><br>
+  <div id="div1">
+    Div1
+    <p id="child">This has been moved with abolsute positioning - it is positioned relative to last non-static parent -&gt Container</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+  </div>
+  <p id="p4"></p>
+</div>
+<p style="background-color: #339933"> This para has not moved </p>
+</body>
+</html>

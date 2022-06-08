@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Introduction</title>
+  <style>
+    body {
+      background-color: beige;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+    }
+
+    #heading {
+      text-decoration: underline;
+      font-variant: small-caps;
+      color: teal;
+    }
+    #intro{
+      width: 750px;
+      margin: auto; /*Ensures section stays in center of page*/
+      text-align: justify;  /*gives a text a left alignment with justification*/
+    }
+    .list1{
+      padding: 0; /* Remove padding */
+      list-style-type: none; /* Remove bullets */
+    }
+    img{
+      height: 500px;
+      width: 750px;
+    }
+    a{
+      color: lightsteelblue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="heading">Use of Selectors in CSS</h1>
+  <section id="intro"><p>Checking the html file we can see the use of different variant of selectors when defining rules for CSS. The "element" selector lets use define a rule based on a given html element e.g. "p", "body" etc.</p>
+  <p>The class selector lets us define rules based on a class. Here we use ".genericname" to define the CSS rule. </p>
+  <p>Finally we have the id selector. With this we can define a rule for a given element using their id. This is achieved using "#genericid".</p><hr></section>
+  
+
+  <section>
+    <ul class="list1">
+      <li><a href="#section1">Picture 1</a></li>
+      <li><a href="#section2">Picture 2</a></li>
+      <li><a href="#section3">Picture 3</a></li>
+      <li><a href="#section4">Picture 4</a></li>
+      <li><a href="#section5">Picture 5</a></li>
+      <li><a href="#section6">Picture 6</a></li>
+    </ul>
+
+  </section>
+
+
+
+  <section id="section1" >
+    <h2>Picture 1</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-1348.jpg" >
+  </section>
+
+
+
+
+  <section id="section2">
+    <h2>Picture 2</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-13967.jpg" >
+  </section>
+
+
+
+
+  <section id="section3">
+    <h2>Picture 3</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-6135.jpg">
+  </section>
+
+
+
+
+  <section id="section4">
+    <h2>Picture 4</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-1949.jpg">
+  </section>
+
+
+
+
+  <section id="section5">
+    <h2>Picture 5</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-14434.jpg">
+  </section>
+
+
+
+
+  <section id="section6">
+    <h2>Picture 6</h2>
+    <img src="C:\Users\david\Pictures\Wallpapers\google-earth-view-14784.jpg">
+    <p>
+      Back to top: <a href="#top">Back to Top</a>
+    </p>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
