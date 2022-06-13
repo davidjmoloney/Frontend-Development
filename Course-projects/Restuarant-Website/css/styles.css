@@ -170,6 +170,108 @@ body {
 /* END HOME PAGE */
 
 
+/* Menu Categories homepage */
+
+/* Some styling for the tiles places at the bottom of the homepage */
+#menu-categories-title {
+	text-transform: uppercase;
+}
+.category-tile {
+	height: 200px;
+	width: 100%;
+	margin: 15px auto 15px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 3px 3px 20px #4B121F;
+}
+
+.category-tile img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.category-tile:hover > span {
+	text-decoration: underline;
+}
+
+.category-tile:hover {
+	box-shadow: 3px 3px 20px #2C0710;
+}
+
+.category-tile span {
+	position:  absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	background: black;
+	color: #E9CE95;
+	opacity: 0.8;
+}
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.menu-item-tile hr {
+  width: 80%;
+  max-width: 400px;
+}
+.menu-item-tile .menu-item-price {
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+	position: relative; 
+	overflow: hidden;
+	padding: 0;
+	box-shadow: 3px 3px 20px #4B121F;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background: black;
+	color: #E9CE95;
+	opacity: 0.8;
+	text-align: center;
+}
+
+#img-responsive {
+	background-attachment: #fff;
+	object-fit: contain;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+  max-width: 500px;
+  margin: auto;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+  text-align: justify;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -273,6 +375,25 @@ body {
     margin-top: 30px;
     padding: 0;
   }
+  .menu-item-photo {
+  	margin: auto;
+  }
+  .menu-item-tile .menu-item-price {
+  	text-align: center;
+  	margin-top: 5px;
+  }
 
 
+}
+
+
+@media (max-width: 469px) {
+	.col-xxs-12 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
 }

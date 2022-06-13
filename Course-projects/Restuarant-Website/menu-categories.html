@@ -15,7 +15,6 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <!-- Here we set the logo link to float left so that our brand will be placed next to it. We have also added classes to make it only visible in medium and large viewports -->
           <a href="index.html" class="pull-left visible-md visible-lg">
             <div id="logo-img"></div>
           </a>
@@ -35,10 +34,10 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
-          <div id="collapsable-nav" class="collapse navbar-collapse">
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
+            <li class="active">  <!-- Add active class to show that the list item is selected -->
               <a href="menu-categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
@@ -56,11 +55,8 @@
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
-
-        </div>
-      </div>
-    </nav>
-
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
   </header>
 
   <div id="call-btn" class="visible-xs">
@@ -71,39 +67,95 @@
   </div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
+  <!-- Main body of menu page - overview of menu catetgories -->
   <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
-    </div>
+    <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
 
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="menu-categories.html"><div id="menu-tile"><img id="menu-bg" src="images/menu-tile.jpg" alt="menu-image"><span>menu</span></div></a>
+    <section class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
       </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="specials-category.html"><div id="specials-tile"><img id="specials-bg" src="images/specials-tile.jpg" alt="specials-image"><span>specials</span></div></a>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
       </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <!-- The following is a link to a position on google maps - use the link or embed function in maps for this -->
-        <a href="https://goo.gl/maps/kmNyfHC6t8TbkKk19" target="_blank"><div id="map-tile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1764.5402536968052!2d19.06137023467526!3d47.50509937846645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc6dd4f9d735%3A0x514250e795eecf33!2sBamba%20Marha%20Burger%20Bar!5e0!3m2!1sen!2shu!4v1655107773913!5m2!1sen!2shu" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>map</span></div></a>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
       </div>
-    </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  </div>
-
+  </div><!-- End of #main-content -->
 
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
-        <!-- Contents of footer will stack once we get smaller than small device breakpoint -->
         <section id="hours" class="col-sm-4">
           <span>Hours:</span><br>
           Sun-Thurs: 11:15am - 10:00pm<br>
           Fri: 11:15am - 2:30pm<br>
           Saturday Closed
-          <!-- include a horizontal rule when we are stacking the footer -->
           <hr class="visible-xs">
         </section>
         <section id="address" class="col-sm-4">
@@ -118,6 +170,7 @@
           <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
         </section>
       </div>
+     
     </div>
   </footer>
 
